@@ -93,7 +93,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>${org.apache.maven.plugins.maven-war-plugin.version}</version>
+        <version>${org.apache.maven.plugins.maven-war-plugin.hoversion}</version>
       </plugin>
       
       <plugin>
@@ -127,7 +127,7 @@
           <!-- printFailingErrors is pretty useful -->
           <printFailingErrors>true</printFailingErrors>
           <rulesets>
-            <ruleset>/home/cs304/Teedy/practice-answer.xml</ruleset>
+            <ruleset>practice-answer.xml</ruleset>
           </rulesets>
         </configuration>
         <executions>
