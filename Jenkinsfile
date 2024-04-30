@@ -12,7 +12,13 @@ pipeline {
       steps {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
           sh 'mvn test'
-          sh 'mvn site'
+        }
+      }
+    }
+        stage('Generate PMD') {
+      steps {
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+          sh 'mvn pmd:pmd'
         }
       }
     }
