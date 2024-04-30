@@ -93,7 +93,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>${org.apache.maven.plugins.maven-war-plugin.hoversion}</version>
+<version>${org.apache.maven.plugins.maven-war-plugin.version}</version>
       </plugin>
       
       <plugin>
