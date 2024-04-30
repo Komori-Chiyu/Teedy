@@ -9,12 +9,16 @@ pipeline {
     stage('Test') {
       steps {
         sh 'mvn test'
-        sh 'mvn site' // 生成项目报告，包括pom报告和javadoc
+        sh 'mvn site'
       }
     }
-    stage('Generate Javadoc') {
-      steps {
-        sh 'mvn javadoc:jar'
+  }
+  post {
+    always {
+      stage('Generate Javadoc') {
+        steps {
+          sh 'mvn javadoc:jar'
+        }
       }
     }
   }
