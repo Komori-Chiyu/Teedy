@@ -25,6 +25,7 @@ pipeline {
 
   post {
   always {
+    archiveArtifacts artifacts: '**/target/surefire-reports/**/', fingerprint: true
     archiveArtifacts artifacts: '**/target/**/*.jar', fingerprint: true
     archiveArtifacts artifacts: '**/target/**/*.war', fingerprint: true
   }
