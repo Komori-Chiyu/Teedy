@@ -1,0 +1,15 @@
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="My Custom Ruleset" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+<description>Custom ruleset for project XYZ</description>
+<rule ref="category/java/codestyle.xml">
+<exclude name="TooManyMethods"/>
+</rule>
+<rule ref="category/java/design.xml">
+<exclude name="GodClass"/>
+<exclude name="CyclomaticComplexity"/>
+<exclude name="CouplingBetweenObject"/>
+<exclude name="CollapsibleIfStatements"/>
+<exclude name="LawOfDemeter"/>
+<exclude name="NcssCount"/>
+<exclude name="TooManyMethods"/>
+</rule>
+</ruleset>
